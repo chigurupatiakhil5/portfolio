@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -7,9 +8,7 @@ export default function Home() {
 
       <Hero />
       <About />
-      <section id="experience" className="min-h-screen bg-background flex items-center justify-center">
-        <h2 className="font-heading text-3xl text-text-main">Experience</h2>
-      </section>
+      <Experience />
       <section id="projects"   className="min-h-screen bg-surface flex items-center justify-center">
         <h2 className="font-heading text-3xl text-text-main">Projects</h2>
       </section>
