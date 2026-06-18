@@ -43,14 +43,14 @@ const certifications = [
     name:         "Claude 101",
     issuer:       "Anthropic",
     credentialId: "zdyhji2k6ovi",
-    issued:       "Jun 2026",
+    issued:       "2026",
     image:        "/certificates/anthropic-claude-101.jpg",
   },
   {
     name:         "Basics of Data Structures and Algorithms",
     issuer:       "Simplilearn",
     credentialId: "10300657",
-    issued:       "Jun 2026",
+    issued:       "2026",
     image:        "/certificates/simplilearn-dsa.jpg",
   },
 ];
