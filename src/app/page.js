@@ -1,101 +1,58 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="min-h-screen bg-background p-12">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Font test */}
+      <h1 className="font-heading text-5xl font-bold text-text-main mb-2">
+        Akhil Chigurupati
+      </h1>
+      <p className="font-sans text-xl text-text-main mb-12">
+        Software Engineer — Plus Jakarta Sans heading, Inter body
+      </p>
+
+      {/* Color swatches */}
+      <div className="flex flex-wrap gap-4 mb-12">
+        <div className="w-32 h-20 rounded-xl bg-background border border-secondary flex items-end p-2">
+          <span className="text-xs text-text-main font-sans">Background</span>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="w-32 h-20 rounded-xl bg-surface flex items-end p-2">
+          <span className="text-xs text-text-main font-sans">Surface</span>
+        </div>
+        <div className="w-32 h-20 rounded-xl bg-primary flex items-end p-2">
+          <span className="text-xs text-white font-sans">Primary</span>
+        </div>
+        <div className="w-32 h-20 rounded-xl bg-secondary flex items-end p-2">
+          <span className="text-xs text-text-main font-sans">Secondary</span>
+        </div>
+        <div className="w-32 h-20 rounded-xl bg-text-main flex items-end p-2">
+          <span className="text-xs text-white font-sans">Text</span>
+        </div>
+      </div>
+
+      {/* Button test */}
+      <div className="flex gap-4 mb-12">
+        <button className="bg-primary text-white font-sans font-medium px-6 py-3 rounded-lg">
+          Primary Button
+        </button>
+        <button className="border-2 border-primary text-primary font-sans font-medium px-6 py-3 rounded-lg">
+          Outline Button
+        </button>
+      </div>
+
+      {/* Card test */}
+      <div className="bg-surface rounded-2xl p-8 max-w-md border border-secondary/30 shadow-sm">
+        <h2 className="font-heading text-2xl font-semibold text-text-main mb-2">
+          Sample Card
+        </h2>
+        <p className="font-sans text-text-main/80 leading-relaxed">
+          This is how a card will look in your portfolio — surface background,
+          soft border, clean text.
+        </p>
+        <span className="inline-block mt-4 bg-secondary/30 text-primary text-sm font-sans font-medium px-3 py-1 rounded-full">
+          Tech Tag
+        </span>
+      </div>
+
+    </main>
   );
 }
