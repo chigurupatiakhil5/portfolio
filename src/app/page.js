@@ -3,6 +3,9 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import Certifications from "@/components/Certifications";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -13,9 +16,9 @@ export default function Home() {
       <Experience />
       <Projects />
       <Skills />
-      <section id="contact"    className="min-h-screen bg-surface flex items-center justify-center">
-        <h2 className="font-heading text-3xl text-text-main">Contact</h2>
-      </section>
+      <Certifications />
+      <Contact />
+      <Footer />
 
     </main>
   );

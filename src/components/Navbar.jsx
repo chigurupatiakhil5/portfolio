@@ -54,6 +54,14 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="/Akhil_Chigurupati_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="font-sans text-sm font-semibold bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary/90 transition-colors duration-200"
+          >
+            Resume
+          </a>
         </div>
 
         {/* ── Hamburger button (mobile only) ─────────────────────── */}
