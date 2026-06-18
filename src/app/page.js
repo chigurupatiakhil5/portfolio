@@ -1,20 +1,12 @@
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
     <main className="bg-background">
 
-      {/* Tall hero placeholder — scroll down to test navbar blur */}
-      <section className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="font-heading text-5xl font-bold text-text-main mb-4">
-            Akhil Chigurupati
-          </h1>
-          <p className="font-sans text-xl text-text-main/70">
-            Scroll down to test the navbar
-          </p>
-        </div>
-      </section>
+      <Hero />
 
-      {/* Placeholder sections — just enough to scroll through */}
+      {/* Placeholder sections — will be replaced version by version */}
       <section id="about"      className="min-h-screen bg-surface flex items-center justify-center">
         <h2 className="font-heading text-3xl text-text-main">About</h2>
       </section>
