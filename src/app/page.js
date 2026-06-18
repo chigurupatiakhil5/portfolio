@@ -1,15 +1,12 @@
 import Hero from "@/components/Hero";
+import About from "@/components/About";
 
 export default function Home() {
   return (
     <main className="bg-background">
 
       <Hero />
-
-      {/* Placeholder sections — will be replaced version by version */}
-      <section id="about"      className="min-h-screen bg-surface flex items-center justify-center">
-        <h2 className="font-heading text-3xl text-text-main">About</h2>
-      </section>
+      <About />
       <section id="experience" className="min-h-screen bg-background flex items-center justify-center">
         <h2 className="font-heading text-3xl text-text-main">Experience</h2>
       </section>
