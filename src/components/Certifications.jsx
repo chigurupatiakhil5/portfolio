@@ -183,7 +183,7 @@ export default function Certifications() {
           <div className="flex items-center gap-2 mb-5">
             <div className="flex items-center gap-2 bg-primary text-white text-xs font-sans font-semibold px-3 py-1.5 rounded-full">
               <FaBookOpen />
-              Published — Springer, Cham
+              Published - Springer, Cham
             </div>
             <span className="font-sans text-xs text-text-main/40">
               {publication.date}

@@ -10,24 +10,24 @@ const fadeUp = {
 
 const projects = [
   {
-    title:       "Review Reality — Fake Review Detection System",
+    title:       "Review Reality - Fake Review Detection System",
     description:
       "A machine learning system that detects fake product reviews across 10 major e-commerce platforms with 92% precision. Uses ensemble ML algorithms and NLP-based feature engineering on 500,000+ review entries. Published in Springer, Cham.",
     highlights: [
       "92% precision across 10 major review platforms",
       "Reduced false positives by 30% through targeted feature extraction",
       "Increased fraudulent review identification by 15%",
-      "Published in Springer, Cham — Feb 14, 2025",
+      "Published in Springer, Cham - Feb 14, 2025",
     ],
     stack: ["Python", "Scikit-learn", "TensorFlow", "NLP", "Random Forest", "Naive Bayes", "MLP"],
     github: null,
     live:   "https://link.springer.com/chapter/10.1007/978-3-031-74885-1_20",
-    badge: "Published — Springer",
+    badge: "Published - Springer",
   },
   {
-    title:       "URL Shortener — Distributed Analytics Platform",
+    title:       "URL Shortener - Distributed Analytics Platform",
     description:
-      "A full-stack URL shortener with a real-time analytics pipeline. Click tracking is fully decoupled from the redirect path via an async Kafka consumer worker — so redirects are never slowed by database writes. Includes a live Grafana dashboard and automated CI pipeline.",
+      "A full-stack URL shortener with a real-time analytics pipeline. Click tracking is fully decoupled from the redirect path via an async Kafka consumer worker - so redirects are never slowed by database writes. Includes a live Grafana dashboard and automated CI pipeline.",
     highlights: [
       "Cache-aside pattern with Redis for sub-millisecond slug lookups",
       "Kafka producer/consumer decouples click tracking from redirects",
@@ -40,7 +40,7 @@ const projects = [
     badge:  null,
   },
   {
-    title:       "Hydroponics Using IoT — Home Gardening System",
+    title:       "Hydroponics Using IoT - Home Gardening System",
     description:
       "An IoT-driven hydroponic system that enables soil-free home gardening. Optimized water and nutrient delivery increased crop yield efficiency by 35%, while real-time sensor alerts reduced manual monitoring time by 50%.",
     highlights: [

@@ -43,7 +43,7 @@ export default function Contact() {
           </h2>
           <p className="font-sans text-text-main/60 text-lg leading-relaxed">
             I&apos;m open to new opportunities, collaborations, and conversations.
-            Feel free to reach out — I&apos;ll get back to you.
+            Feel free to reach out - I&apos;ll get back to you.
           </p>
         </motion.div>
 
