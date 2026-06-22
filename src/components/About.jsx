@@ -86,7 +86,7 @@ export default function About() {
             >
               I hold a Master&apos;s in Information Systems from Regis University and
               stay curious about the intersection of distributed systems and AI/ML
-              — particularly how intelligent systems can be built to scale.
+              - particularly how intelligent systems can be built to scale.
             </motion.p>
 
             {/* Quick facts */}
