@@ -40,16 +40,46 @@ const projects = [
     badge:  null,
   },
   {
-    title:       "Hydroponics Using IoT - Home Gardening System",
+    title:       "AI Incident Intelligence Platform",
     description:
-      "An IoT-driven hydroponic system that enables soil-free home gardening. Optimized water and nutrient delivery increased crop yield efficiency by 35%, while real-time sensor alerts reduced manual monitoring time by 50%.",
+      "An AI-powered incident intelligence platform that ingests infrastructure metrics in real time, flags anomalies, and lets engineers query past incidents in plain English. A RAG pipeline over indexed incident history returns streamed, grounded answers instead of forcing manual log digging.",
     highlights: [
-      "Increased crop yield efficiency by 35% through optimized nutrient delivery",
-      "Integrated ultrasonic water level sensors with real-time alerts",
-      "Reduced manual monitoring time by 50%",
-      "Scalable prototype supporting up to 20 plants per unit",
+      "Real-time metric ingestion via AWS SQS with rule-based anomaly detection",
+      "RAG pipeline over LlamaIndex + Supabase pgvector for semantic incident search",
+      "Streaming responses over SSE, evaluated with RAGAS and tracked in MLflow",
+      "Claude API as primary LLM with Groq fallback for reliability",
     ],
-    stack: ["IoT", "Arduino", "Raspberry Pi", "Python", "Ultrasonic Sensors", "Embedded Systems"],
+    stack: ["Python", "FastAPI", "Claude API", "LlamaIndex", "Supabase pgvector", "RAGAS", "MLflow", "AWS SQS", "React", "TypeScript"],
+    github: null,
+    live:   null,
+    badge:  null,
+  },
+  {
+    title:       "AI-Powered Log Analyzer",
+    description:
+      "A log analysis tool that lets engineers upload raw log files and ask plain-English questions about them. Logs are chunked and embedded for semantic search, while a rule-based detector auto-flags ERROR/WARN/CRITICAL frequency spikes without any LLM calls.",
+    highlights: [
+      "Semantic search over log chunks using sentence-transformers and Supabase pgvector",
+      "Streamed natural-language answers via Groq API running LLaMA 3, fully free-tier",
+      "Automatic ERROR/WARN/CRITICAL spike detection with zero LLM cost",
+      "Dockerized end-to-end with GitHub Actions CI/CD",
+    ],
+    stack: ["React", "Vite", "FastAPI", "Groq", "LLaMA 3", "Sentence-Transformers", "Supabase pgvector", "Docker"],
+    github: null,
+    live:   null,
+    badge:  null,
+  },
+  {
+    title:       "Autonomous MCP Agent - Multi-Tool Task Orchestration",
+    description:
+      "A custom Model Context Protocol (MCP) server exposing database, ticketing, and external API tools to Claude Desktop and a self-built autonomous agent client. The agent chains tool calls to complete multi-step tasks and recovers from failures instead of halting.",
+    highlights: [
+      "Custom MCP server built on the Anthropic MCP SDK exposing database, ticketing, and API tools",
+      "Autonomous agent client powered by Groq API (LLaMA 3) chains tool calls to complete multi-step tasks",
+      "Error recovery and retry loop - failed tool calls trigger re-planning instead of halting execution",
+      "Every agent decision and tool call logged and persisted in PostgreSQL for full traceability",
+    ],
+    stack: ["Python", "Anthropic MCP SDK", "Groq", "LLaMA 3", "FastAPI", "PostgreSQL", "Docker", "GitHub Actions"],
     github: null,
     live:   null,
     badge:  null,
@@ -79,7 +109,8 @@ export default function Projects() {
         </motion.div>
 
         {/* ── Project cards ─────────────────────────────────────────────── */}
-        <div className="grid md:grid-cols-2 gap-8">
+        {/* When the count is odd, the last card spans + centers itself instead of sitting alone half-empty */}
+        <div className="grid md:grid-cols-2 gap-8 [&>*:last-child:nth-child(odd)]:md:col-span-2 [&>*:last-child:nth-child(odd)]:md:max-w-lg [&>*:last-child:nth-child(odd)]:md:mx-auto [&>*:last-child:nth-child(odd)]:md:w-full">
           {projects.map((project, i) => (
             <motion.div
               key={i}
