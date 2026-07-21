@@ -6,6 +6,7 @@ import {
   FaServer,
   FaLayerGroup,
   FaBrain,
+  FaRobot,
   FaCubes,
   FaStream,
   FaChartBar,
@@ -22,12 +23,12 @@ const skillCategories = [
   {
     category: "Languages",
     icon: FaCode,
-    skills: ["Python", "JavaScript", "Java", "C", "SQL", "HTML", "CSS"],
+    skills: ["Python", "JavaScript", "TypeScript", "Java", "C", "SQL", "HTML", "CSS"],
   },
   {
     category: "Backend",
     icon: FaServer,
-    skills: ["FastAPI", "REST APIs", "Microservices"],
+    skills: ["FastAPI", "Node.js", "REST APIs", "Microservices"],
   },
   {
     category: "Frontend",
@@ -38,6 +39,11 @@ const skillCategories = [
     category: "AI / ML",
     icon: FaBrain,
     skills: ["Scikit-learn", "TensorFlow", "Anomaly Detection", "Predictive Analytics", "NLP"],
+  },
+  {
+    category: "AI / LLM Tooling",
+    icon: FaRobot,
+    skills: ["Claude API", "OpenAI API", "Groq", "LLaMA 3", "Anthropic MCP SDK", "LangChain", "LlamaIndex", "RAGAS", "MLflow"],
   },
   {
     category: "Containers & Orchestration",
@@ -57,12 +63,12 @@ const skillCategories = [
   {
     category: "Databases",
     icon: FaDatabase,
-    skills: ["PostgreSQL", "MongoDB", "Redis"],
+    skills: ["PostgreSQL", "MongoDB", "Redis", "Supabase pgvector"],
   },
   {
     category: "Cloud & DevOps",
     icon: FaCloud,
-    skills: ["AWS", "GitHub Actions", "GitLab CI/CD", "Linux"],
+    skills: ["AWS", "GitHub Actions", "GitLab CI/CD", "pytest", "Linux"],
   },
 ];
 
