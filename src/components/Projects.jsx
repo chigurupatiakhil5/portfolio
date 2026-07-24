@@ -80,7 +80,7 @@ const projects = [
       "Every agent decision and tool call logged and persisted in PostgreSQL for full traceability",
     ],
     stack: ["Python", "Anthropic MCP SDK", "Groq", "LLaMA 3", "FastAPI", "PostgreSQL", "Docker", "GitHub Actions"],
-    github: null,
+    github: "https://github.com/chigurupatiakhil5/mcp-tool-agent",
     live:   null,
     badge:  null,
   },
