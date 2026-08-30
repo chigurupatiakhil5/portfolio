@@ -29,7 +29,7 @@ const specializations = [
 ];
 
 const quickFacts = [
-  { icon: FaMapMarkerAlt,   text: "Austin, TX"                                },
+  { icon: FaMapMarkerAlt,   text: "United States"                             },
   { icon: FaBriefcase,      text: "Software Engineer · ex-TCS"                },
   { icon: FaGraduationCap,  text: "M.S. Information Systems · Regis University" },
 ];
@@ -72,11 +72,11 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="font-sans text-text-main/80 text-lg leading-relaxed mb-6"
             >
-              I&apos;m a software engineer based in Austin, TX, focused on building
-              backend systems that are reliable, observable, and fast. At Tata
-              Consultancy Services, I designed Python microservices and Kafka
-              streaming pipelines for an AI-driven infrastructure monitoring
-              platform managing 500+ production services.
+              I&apos;m a software engineer focused on building backend and AI
+              systems that are reliable and fast. At Tata Consultancy Services,
+              I designed Python microservices and Kafka streaming pipelines for
+              an AI-driven infrastructure monitoring platform managing 500+
+              production services.
             </motion.p>
 
             <motion.p
@@ -84,9 +84,14 @@ export default function About() {
               transition={{ duration: 0.6 }}
               className="font-sans text-text-main/80 text-lg leading-relaxed mb-10"
             >
-              I hold a Master&apos;s in Information Systems from Regis University and
-              stay curious about the intersection of distributed systems and AI/ML
-              - particularly how intelligent systems can be built to scale.
+              Outside of that, I build and ship full-stack AI projects end to
+              end - a multi-agent voice assistant used daily by real users, a
+              CRM sales-intelligence tool with live HubSpot and AI-classification
+              integrations, and RAG-based platforms for incident intelligence
+              and log analysis. I hold a Master&apos;s in Information Systems from
+              Regis University and stay curious about the intersection of
+              distributed systems and AI/ML - particularly how intelligent
+              systems can be built to scale.
             </motion.p>
 
             {/* Quick facts */}
