@@ -10,6 +10,22 @@ const fadeUp = {
 
 const projects = [
   {
+    title:       "Sales Signal Intelligence Platform",
+    description:
+      "A full-stack tool that syncs deals from HubSpot, tracks pipeline velocity from historical snapshots in Postgres, and uses AI to flag each deal as at-risk, stalling, or on-track with a reason grounded in the deal's actual numbers - not a generic guess.",
+    highlights: [
+      "HubSpot CRM API integration (deals + notes) with per-sync snapshotting in Postgres to measure real stage velocity over time",
+      "AI classification (Groq) is grounded in each deal's real numbers vs. the actual historical average for that stage",
+      "Kanban pipeline dashboard (React + TypeScript, Framer Motion) with live search/filter and a click-to-expand deal detail view",
+      "Seed pipeline generates 50 realistic deals with varied stages and contact activity for immediate end-to-end testing",
+    ],
+    stack: ["Python", "FastAPI", "PostgreSQL", "React", "TypeScript", "Groq", "HubSpot API", "Framer Motion"],
+    github: "https://github.com/chigurupatiakhil5/sales-signal-platform",
+    live:   "https://sales-signal-platform.vercel.app",
+    liveLabel: "Live Demo",
+    badge: null,
+  },
+  {
     title:       "Review Reality - Fake Review Detection System",
     description:
       "A machine learning system that detects fake product reviews across 10 major e-commerce platforms with 92% precision. Uses ensemble ML algorithms and NLP-based feature engineering on 500,000+ review entries. Published in Springer, Cham.",
@@ -22,7 +38,24 @@ const projects = [
     stack: ["Python", "Scikit-learn", "TensorFlow", "NLP", "Random Forest", "Naive Bayes", "MLP"],
     github: null,
     live:   "https://link.springer.com/chapter/10.1007/978-3-031-74885-1_20",
+    liveLabel: "View Publication",
     badge: "Published - Springer",
+  },
+  {
+    title:       "Jarvis - Multi-Agent Voice AI Assistant",
+    description:
+      "A voice-activated multi-agent assistant. An orchestrator LLM routes each spoken command to the right specialist agent, which acts on it and speaks the result back - deployed live and used daily by real users, not just a local demo.",
+    highlights: [
+      "Orchestrator (Groq LLaMA 3.3-70B) routes commands across 7 specialist agents - Research, Writer, Email, Code, Monitor, Preferences, General",
+      "Full voice pipeline: local wake-word detection, faster-whisper speech-to-text, streaming TTS via ElevenLabs/Piper",
+      "Multi-user accounts via Supabase Auth (JWKS/JWT verification) with per-user preferences and history",
+      "Every agent decision logged to Postgres for full traceability; deployed on Render + Vercel and shared with real users",
+    ],
+    stack: ["Python", "FastAPI", "Groq", "LLaMA 3.3-70B", "Supabase", "faster-whisper", "ElevenLabs", "React", "TypeScript"],
+    github: "https://github.com/chigurupatiakhil5/Jarvis",
+    live:   "https://jarvis-plum-gamma-14.vercel.app",
+    liveLabel: "Live Demo",
+    badge: null,
   },
   {
     title:       "URL Shortener - Distributed Analytics Platform",
@@ -66,7 +99,8 @@ const projects = [
     ],
     stack: ["React", "Vite", "FastAPI", "Groq", "LLaMA 3", "Sentence-Transformers", "Supabase pgvector", "Docker"],
     github: "https://github.com/chigurupatiakhil5/ai-log-analyzer",
-    live:   null,
+    live:   "https://ai-log-analyzer-murex.vercel.app/",
+    liveLabel: "Live Demo",
     badge:  null,
   },
   {
@@ -185,7 +219,7 @@ export default function Projects() {
                     className="flex items-center gap-2 border-2 border-primary text-primary font-sans text-sm font-semibold px-4 py-2.5 rounded-xl hover:bg-primary/5 transition-colors duration-200"
                   >
                     <FaExternalLinkAlt />
-                    View Publication
+                    {project.liveLabel ?? "Live Demo"}
                   </a>
                 )}
               </div>

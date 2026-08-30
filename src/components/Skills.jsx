@@ -12,6 +12,7 @@ import {
   FaChartBar,
   FaDatabase,
   FaCloud,
+  FaPlug,
 } from "react-icons/fa";
 
 const fadeUp = {
@@ -33,7 +34,7 @@ const skillCategories = [
   {
     category: "Frontend",
     icon: FaLayerGroup,
-    skills: ["React.js", "Next.js", "Vite"],
+    skills: ["React.js", "Next.js", "Vite", "Framer Motion", "Tailwind CSS"],
   },
   {
     category: "AI / ML",
@@ -63,12 +64,17 @@ const skillCategories = [
   {
     category: "Databases",
     icon: FaDatabase,
-    skills: ["PostgreSQL", "MongoDB", "Redis", "Supabase pgvector"],
+    skills: ["PostgreSQL", "Neon", "MongoDB", "Redis", "Supabase pgvector"],
   },
   {
     category: "Cloud & DevOps",
     icon: FaCloud,
-    skills: ["AWS", "GitHub Actions", "GitLab CI/CD", "pytest", "Linux"],
+    skills: ["AWS", "Render", "Vercel", "GitHub Actions", "GitLab CI/CD", "pytest", "Linux"],
+  },
+  {
+    category: "Third-Party APIs",
+    icon: FaPlug,
+    skills: ["HubSpot API"],
   },
 ];
 
